@@ -13,23 +13,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
-        <script>
-            const cartItemsContainer = document.getElementById('cartItemsContainer');
-          
-            const addToCartButtons = document.querySelectorAll('.addToCartBtn');
-          
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const productName = button.dataset.productName;
-                    const productPrice = button.dataset.productPrice;
-          
-                    const item = document.createElement('div');
-                    item.textContent = productName + ' - ' + productPrice + ' lei';
-          
-                    cartItemsContainer.appendChild(item);
-                });
-            });
-        </script>
         
     </head>
     <body>
@@ -68,30 +51,70 @@
                 </div>
             </div>
         </header>
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-80">
-                            <img class="card-img-top" src="https://i.ibb.co/3YJvcSd/mousse.png" alt="..." />
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">Cleansing Mousse</h5>
-                                    90 lei
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center">
-                                    <button class="btn btn-outline-dark mt-auto addToCartBtn" data-product-name="Cleansing Mousse" data-product-price="90">Adaugă în coș</button>
-                                </div>
-                            </div>
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-80">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://i.ibb.co/3YJvcSd/mousse.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Cleansing Mousse</h5>
+                            <!-- Product price-->
+                            90 lei
                         </div>
                     </div>
-                    <!-- restul produselor -->
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="coș.html">Adaugă în coș</a></div>
+                    </div>
                 </div>
             </div>
-        </section>
-                <!-- Footer-->
+            <div class="col mb-5">
+                <div class="card h-80">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://i.ibb.co/DtRPd00/hand-cream.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Hand cream</h5>
+                            <!-- Product price-->
+                            120 lei
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="coș.html">Adaugă în coș</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-80">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://i.ibb.co/tKdTBC4/serum.png" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Serum antioxidant</h5>
+                            <!-- Product price-->
+                            110 lei
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="coș.html">Adaugă în coș</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                <!-- Footer-->
         <footer class="py-5 bg-success">
             <div class="container"><p class="m-0 text-center" >Copyright &copy; Your Website 2023</p></div>
         </footer>
